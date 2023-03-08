@@ -8,7 +8,7 @@ use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 
-class ZoomAPIClientExtension extends Extension
+class KeycloakAPIClientExtension extends Extension
 {
 
     /**

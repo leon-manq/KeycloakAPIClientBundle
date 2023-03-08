@@ -5,10 +5,10 @@
         http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="ZoomAPIClientBundle\ZoomAPIClient">
-            <argument key="$accountId">%env(resolve:ZOOM_ACCOUNT_ID)%</argument>
-            <argument key="$clientId">%env(resolve:ZOOM_CLIENT_ID)%</argument>
-            <argument key="$clientSecret">%env(resolve:ZOOM_CLIENT_SECRET)%</argument>
+        <service id="manQ\KeycloakApiClientBundle\KeycloakApiClient">
+            <argument key="$username">%env(resolve:KEYCLOAK_USERNAME)%</argument>
+            <argument key="$password">%env(resolve:KEYCLOAK_PASSWORD)%</argument>
+            <argument key="$baseUrl">%env(resolve:KEYCLOAK_BASEURL)%</argument>
         </service>
     </services>
 </container>

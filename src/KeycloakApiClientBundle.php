@@ -2,7 +2,9 @@
 
 namespace manQ\KeycloakApiClientBundle;
 
-class KeycloakApiClientBundle
+use Symfony\Component\HttpKernel\Bundle\Bundle;
+
+class KeycloakApiClientBundle extends Bundle
 {
 
 }
